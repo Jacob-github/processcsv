@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driverclass-name": org.h2.Driver
+    url: jdbc:h2:~/h2db
+    username: sa
+    password: password
+
+ambro:
+  processor:
+    batchsize: 100
+    tablename: TRANSACTIONS
+    headers: Client_Information,Product_Information,Total_Transaction_Amount
+    query: SELECT CONCAT(CLIENT_NUMBER, ACCOUNT_NUMBER, SUBACCOUNT_NUMBER) AS Client_Information, CONCAT(EXCHANGE_CODE, PRODUCT_GROUP_CODE, SYMBOL, EXPIRATION_DATE) AS Product_Information, (SUM(QUANTITY_LONG) - SUM(QUANTITY_SHORT)) AS Total_Transaction_Amount FROM TRANSACTIONS WHERE CLIENT_NUMBER=%CLIENT_NUMBER% GROUP BY (EXCHANGE_CODE, PRODUCT_GROUP_CODE, SYMBOL, EXPIRATION_DATE)
+    offsets:
+      CLIENT_TYPE:
+        start: 4
+        end: 7
+      CLIENT_NUMBER:
+        start: 8
+        end: 11
+      ACCOUNT_NUMBER:
+        start: 12
+        end: 15
+      SUBACCOUNT_NUMBER:
+        start: 16
+        end: 19
+      EXCHANGE_CODE:
+        start: 28
+        end: 31
+      PRODUCT_GROUP_CODE:
+        start: 26
+        end: 27
+      SYMBOL:
+        start: 32
+        end: 37
+      EXPIRATION_DATE:
+        start: 38
+        end: 45
+      QUANTITY_LONG:
+        start: 52
+        end: 62
+      QUANTITY_SHORT:
+        start: 63
+        end: 73

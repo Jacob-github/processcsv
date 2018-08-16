@@ -1,0 +1,132 @@
+2018-08-15 16:51:00 INFO  a.a.a.p.c.Application:50 - Starting Application on AtlasII.local with PID 36424 (/Users/jacob/projects/processcsv/target/classes started by jacob in /Users/jacob/projects/processcsv)
+2018-08-15 16:51:00 INFO  a.a.a.p.c.Application:659 - No active profile set, falling back to default profiles: default
+2018-08-15 16:51:00 INFO  o.s.c.a.AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e005c4b: startup date [Wed Aug 15 16:51:00 AEST 2018]; root of context hierarchy
+2018-08-15 16:51:01 INFO  o.s.j.e.a.AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-08-15 16:51:01 INFO  o.s.j.e.a.AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-15 16:51:01 INFO  o.s.j.e.a.AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-15 16:51:01 INFO  a.a.a.p.c.Application:59 - Started Application in 1.384 seconds (JVM running for 1.735)
+2018-08-15 16:51:01 INFO  a.a.a.p.c.Application:47 - Start processing inputFile=Input.txt outputFile=Output.csv clientNumber=1234
+2018-08-15 16:51:01 INFO  a.a.a.p.c.s.i.DataStoreImpl:44 - initialise
+2018-08-15 16:51:01 INFO  a.a.a.p.c.s.i.DataStoreImpl:46 - DROP TABLE customers IF EXISTS;
+
+CREATE TABLE TRANSACTIONS (
+    CLIENT_TYPE VARCHAR(255),
+    CLIENT_NUMBER VARCHAR(255),
+    ACCOUNT_NUMBER VARCHAR(255),
+    SUBACCOUNT_NUMBER VARCHAR(255),
+    EXCHANGE_CODE VARCHAR(255),
+    PRODUCT_GROUP_CODE VARCHAR(255),
+    SYMBOL VARCHAR(255),
+    EXPIRATION_DATE VARCHAR(255),
+    QUANTITY_LONG INTEGER,
+    QUANTITY_SHORT INTEGER
+);
+2018-08-15 16:51:01 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2018-08-15 16:51:01 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 100 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 200 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 300 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 400 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 500 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 600 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 700 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 717 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 717 records
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.OutputCsvFile:24 - Write to output file:
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400030001,CMEFUNK.20100910,-215
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400020001,SGXFUNK20100910,-52
+2018-08-15 16:51:01 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400030001,CMEFUN120100910,285
+2018-08-15 16:51:01 INFO  a.a.a.p.c.Application:49 - Completed Processing Input.txt. Output file generated: Output.csv
+2018-08-15 16:51:01 INFO  o.s.c.a.AnnotationConfigApplicationContext:993 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e005c4b: startup date [Wed Aug 15 16:51:00 AEST 2018]; root of context hierarchy
+2018-08-15 16:51:01 INFO  o.s.j.e.a.AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-08-15 16:51:01 INFO  o.s.j.e.a.AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-08-15 16:51:01 INFO  c.z.h.HikariDataSource:381 - HikariPool-1 - Shutdown initiated...
+2018-08-15 16:51:01 INFO  c.z.h.HikariDataSource:383 - HikariPool-1 - Shutdown completed.
+2018-08-15 16:51:30 INFO  a.a.a.p.c.Application:50 - Starting Application on AtlasII.local with PID 36432 (/Users/jacob/projects/processcsv/target/classes started by jacob in /Users/jacob/projects/processcsv)
+2018-08-15 16:51:30 INFO  a.a.a.p.c.Application:659 - No active profile set, falling back to default profiles: default
+2018-08-15 16:51:30 INFO  o.s.c.a.AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e005c4b: startup date [Wed Aug 15 16:51:30 AEST 2018]; root of context hierarchy
+2018-08-15 16:51:31 INFO  o.s.j.e.a.AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-08-15 16:51:31 INFO  o.s.j.e.a.AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-15 16:51:31 INFO  o.s.j.e.a.AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-15 16:51:31 INFO  a.a.a.p.c.Application:59 - Started Application in 1.059 seconds (JVM running for 1.419)
+2018-08-15 16:51:31 INFO  a.a.a.p.c.Application:47 - Start processing inputFile=Input.txt outputFile=Output.csv clientNumber=1234
+2018-08-15 16:51:31 INFO  a.a.a.p.c.s.i.DataStoreImpl:44 - initialise
+2018-08-15 16:51:31 INFO  a.a.a.p.c.s.i.DataStoreImpl:46 - DROP TABLE customers IF EXISTS;
+
+CREATE TABLE TRANSACTIONS (
+    CLIENT_TYPE VARCHAR(255),
+    CLIENT_NUMBER VARCHAR(255),
+    ACCOUNT_NUMBER VARCHAR(255),
+    SUBACCOUNT_NUMBER VARCHAR(255),
+    EXCHANGE_CODE VARCHAR(255),
+    PRODUCT_GROUP_CODE VARCHAR(255),
+    SYMBOL VARCHAR(255),
+    EXPIRATION_DATE VARCHAR(255),
+    QUANTITY_LONG INTEGER,
+    QUANTITY_SHORT INTEGER
+);
+2018-08-15 16:51:31 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2018-08-15 16:51:31 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 100 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 200 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 300 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 400 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 500 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 600 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 700 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 717 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 717 records
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.OutputCsvFile:24 - Write to output file:
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400030001,CMEFUNK.20100910,-215
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400020001,SGXFUNK20100910,-52
+2018-08-15 16:51:31 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400030001,CMEFUN120100910,285
+2018-08-15 16:51:31 INFO  a.a.a.p.c.Application:49 - Completed Processing Input.txt. Output file generated: Output.csv
+2018-08-15 16:51:31 INFO  o.s.c.a.AnnotationConfigApplicationContext:993 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e005c4b: startup date [Wed Aug 15 16:51:30 AEST 2018]; root of context hierarchy
+2018-08-15 16:51:31 INFO  o.s.j.e.a.AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-08-15 16:51:31 INFO  o.s.j.e.a.AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-08-15 16:51:31 INFO  c.z.h.HikariDataSource:381 - HikariPool-1 - Shutdown initiated...
+2018-08-15 16:51:31 INFO  c.z.h.HikariDataSource:383 - HikariPool-1 - Shutdown completed.
+2018-08-15 16:51:54 INFO  a.a.a.p.c.Application:50 - Starting Application on AtlasII.local with PID 36440 (/Users/jacob/projects/processcsv/target/classes started by jacob in /Users/jacob/projects/processcsv)
+2018-08-15 16:51:54 INFO  a.a.a.p.c.Application:659 - No active profile set, falling back to default profiles: default
+2018-08-15 16:51:54 INFO  o.s.c.a.AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e005c4b: startup date [Wed Aug 15 16:51:54 AEST 2018]; root of context hierarchy
+2018-08-15 16:51:55 INFO  o.s.j.e.a.AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-08-15 16:51:55 INFO  o.s.j.e.a.AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-15 16:51:55 INFO  o.s.j.e.a.AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-15 16:51:55 INFO  a.a.a.p.c.Application:59 - Started Application in 1.192 seconds (JVM running for 1.605)
+2018-08-15 16:51:55 INFO  a.a.a.p.c.Application:47 - Start processing inputFile=Input.txt outputFile=Output.csv clientNumber=1234
+2018-08-15 16:51:55 INFO  a.a.a.p.c.s.i.DataStoreImpl:44 - initialise
+2018-08-15 16:51:55 INFO  a.a.a.p.c.s.i.DataStoreImpl:46 - DROP TABLE customers IF EXISTS;
+
+CREATE TABLE TRANSACTIONS (
+    CLIENT_TYPE VARCHAR(255),
+    CLIENT_NUMBER VARCHAR(255),
+    ACCOUNT_NUMBER VARCHAR(255),
+    SUBACCOUNT_NUMBER VARCHAR(255),
+    EXCHANGE_CODE VARCHAR(255),
+    PRODUCT_GROUP_CODE VARCHAR(255),
+    SYMBOL VARCHAR(255),
+    EXPIRATION_DATE VARCHAR(255),
+    QUANTITY_LONG INTEGER,
+    QUANTITY_SHORT INTEGER
+);
+2018-08-15 16:51:55 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2018-08-15 16:51:55 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 100 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 200 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 300 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 400 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 500 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 600 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 700 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 717 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.InputCsvFile:51 - Read 717 records
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.OutputCsvFile:24 - Write to output file:
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400030001,CMEFUNK.20100910,-215
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400020001,SGXFUNK20100910,-52
+2018-08-15 16:51:55 INFO  a.a.a.p.c.m.OutputCsvFile:28 - 123400030001,CMEFUN120100910,285
+2018-08-15 16:51:55 INFO  a.a.a.p.c.Application:49 - Completed Processing Input.txt. Output file generated: Output.csv
+2018-08-15 16:51:55 INFO  o.s.c.a.AnnotationConfigApplicationContext:993 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e005c4b: startup date [Wed Aug 15 16:51:54 AEST 2018]; root of context hierarchy
+2018-08-15 16:51:55 INFO  o.s.j.e.a.AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-08-15 16:51:55 INFO  o.s.j.e.a.AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-08-15 16:51:55 INFO  c.z.h.HikariDataSource:381 - HikariPool-1 - Shutdown initiated...
+2018-08-15 16:51:55 INFO  c.z.h.HikariDataSource:383 - HikariPool-1 - Shutdown completed.
